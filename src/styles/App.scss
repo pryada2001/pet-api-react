@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 800px;
+    padding: 20px;
+    border: 2px solid lightgrey;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding: 14px;
+    border: 2px solid teal;
+
+    .post__content {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .post__btns button {
+        padding: 4px;
+    }
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
