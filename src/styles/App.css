@@ -15,6 +15,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  background: rgba(248, 248, 255, 0.7);
+  border-radius: 4px;
   padding: 14px;
   border: 2px solid teal;
 }
@@ -23,14 +25,24 @@
   flex-direction: column;
   gap: 6px;
 }
-.post .post__btns button {
-  padding: 4px;
-}
 
 .post-list {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.form-create-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid teal;
+  padding: 10px 24px 24px 24px;
+  border-radius: 4px;
+  background: rgba(248, 248, 255, 0.4);
 }
 
 /*# sourceMappingURL=App.css.map */

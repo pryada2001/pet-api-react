@@ -1,8 +1,13 @@
 .default-input {
   width: 100%;
   padding: 5px 15px;
-  margin: 5px 0;
   border: 1px solid teal;
+  border-radius: 2px;
+  background: rgba(248, 248, 255, 0.7);
+  transition: outline 0.02s ease-in;
+}
+.default-input:focus {
+  outline: teal solid 2px;
 }
 
 /*# sourceMappingURL=DefaultInput.module.css.map */
