@@ -7,7 +7,7 @@ const PostList = (props) => {
 
 	return (
 		<div className="post-list">
-			<h1 style={{ textAlign: 'center' }}>
+			<h1>
 				{ title }
 			</h1>
 			{posts.map((post, index) =>

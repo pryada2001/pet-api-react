@@ -1,0 +1,16 @@
+@import "./../../styles/_color.scss";
+@import "./../../styles/_font.scss";
+
+.post-list-section {
+    .post-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        .post-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+        }
+    }
+}

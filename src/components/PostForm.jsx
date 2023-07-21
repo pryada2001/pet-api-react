@@ -20,20 +20,22 @@ const PostForm = (props) => {
 
 	return (
 		<form className="form-create-post">
-			<h1>Создать пост</h1>
-			<DefaultInput
-				value={post.title}
-				onChange={(event) => setPost({...post, title: event.target.value})}
-				type="text"
-				placeholder="Название поста"
-			/>
-			<DefaultInput
-				value={post.body}
-				onChange={(event) => setPost({...post, body: event.target.value})}
-				type="text"
-				placeholder="Описание поста"
-			/>
-			<ActionButton onClick={addNewPost}>Отправить</ActionButton>
+			<div className="form-create-post-title">Создание поста</div>
+			<div className="form-create-post-main">
+				<DefaultInput
+					value={post.title}
+					onChange={(event) => setPost({...post, title: event.target.value})}
+					type="text"
+					placeholder="Название поста"
+				/>
+				<DefaultInput
+					value={post.body}
+					onChange={(event) => setPost({...post, body: event.target.value})}
+					type="text"
+					placeholder="Описание поста"
+				/>
+				<ActionButton onClick={addNewPost}>Отправить</ActionButton>
+			</div>
 		</form>
 	);
 };

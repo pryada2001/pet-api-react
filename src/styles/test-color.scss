@@ -1,0 +1,14 @@
+[data-theme="dark"] {
+    --text-color: pink;
+    --bg-color: black;
+}
+
+[data-theme="light"] {
+    --text-color: black;
+    --bg-color: pink;
+}
+
+[data-theme="green"] {
+    --text-color: #67f267;
+    --bg-color: #093c09;
+}
