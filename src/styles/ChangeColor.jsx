@@ -14,7 +14,7 @@ const ChangeColor = () => {
 		document.querySelector("html").setAttribute("data-theme", "green");
 	}
 
-	const toggleTheme = (event) => {
+	const toggleTheme = () => {
 		if (document.querySelector("html").getAttribute("data-theme") === "green") {
 			setDarkMode();
 		} else if (document.querySelector("html").getAttribute("data-theme") === "dark") {

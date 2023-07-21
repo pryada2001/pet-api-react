@@ -4,7 +4,6 @@ import PostList from "./components/PostList/PostList";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import CreatePost from "./components/CreatePost/CreatePost";
-import AbsenceMessage from "./components/AbsenceMessage/AbsenceMessage";
 import ChangeColor from "./styles/ChangeColor";
 
 function App() {

@@ -4,7 +4,7 @@
     font-family: Inter, sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    background-color: $post;
-    color: $text;
+    background-color: var(--post);
+    color: var(--text);
     outline: none;
 }

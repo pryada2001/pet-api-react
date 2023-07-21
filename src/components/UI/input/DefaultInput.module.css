@@ -1,17 +1,58 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |     background-color: $post;
- *   |                       ^^^^^
- *   '
- *   DefaultInput.module.scss 7:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      background-color: $post;\d\a   \2502                        ^^^^^\a   \2575 \a   DefaultInput.module.scss 7:23  root stylesheet";
+:root {
+  --dark-gradient-1: #303030;
+  --dark-gradient-2: #ED9284;
+  --dark-gradient-3: #EFD4D4;
+  --light-gradient-1: #000000;
+  --light-gradient-2: #B2ACAC;
+  --light-gradient-3: #FFFFFF;
+  --green-gradient-1: #072704;
+  --green-gradient-2: #809B32;
+  --green-gradient-3: #B9CD80;
 }
+
+[data-theme=dark] {
+  --important: #ED9284;
+  --post: #E6BDB6;
+  --background: #303030;
+  --button: #EFD4D4;
+  --border: #403C3C;
+  --header: #FFB1A5;
+  --text: #403C3C;
+  --theme: #845049;
+  --credit: #7D7876;
+}
+
+[data-theme=light] {
+  --important: #B2ACAC;
+  --post: #FFFFFF;
+  --background: #F4F4F4;
+  --button: #E8E4E4;
+  --border: #403C3C;
+  --header: #000000;
+  --text: #202020;
+  --theme: #4B4B4B;
+  --credit: #B8B6B6;
+}
+
+[data-theme=green] {
+  --important: #809B32;
+  --post: #B9CD80;
+  --background: #083003;
+  --button: #5F7909;
+  --border: #4F5B2C;
+  --header: #A2B46D;
+  --text: #072704;
+  --theme: #225D12;
+  --credit: #4F5B2C;
+}
+
+.default-input {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--post);
+  color: var(--text);
+  outline: none;
+}
+
+/*# sourceMappingURL=DefaultInput.module.css.map */
