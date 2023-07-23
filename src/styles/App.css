@@ -185,6 +185,7 @@ body {
   background-color: var(--background);
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s;
 }
 .App .Main {
   display: flex;

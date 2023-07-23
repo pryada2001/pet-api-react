@@ -127,7 +127,7 @@ body {
 .Header .Header__theme-selection .theme-selector-dark {
   background: radial-gradient(circle at top left, var(--dark-gradient-1), var(--dark-gradient-2), var(--dark-gradient-3));
 }
-.Header .Header__theme-selection .theme-selector-white {
+.Header .Header__theme-selection .theme-selector-light {
   background: radial-gradient(circle at top left, var(--light-gradient-1), var(--light-gradient-2), var(--light-gradient-3));
 }
 .Header .Header__theme-selection .theme-selector-green {
