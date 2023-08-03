@@ -10,9 +10,11 @@
     color: var(--text);
     border: 0.125rem solid var(--border);
     border-radius: 0.125rem;
+    white-space: pre-wrap;
 
     .post-text {
         flex-grow: 1;
+        line-height: 1.5;
         .post-header {
             font-size: 1.25rem;
             font-weight: bold;

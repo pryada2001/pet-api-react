@@ -23,7 +23,7 @@
 }
 
 [data-theme=light] {
-  --important: #B2ACAC;
+  --important: #d2d2d2;
   --post: #FFFFFF;
   --background: #F4F4F4;
   --button: #E8E4E4;
@@ -31,19 +31,19 @@
   --header: #000000;
   --text: #202020;
   --theme: #4B4B4B;
-  --credit: #B8B6B6;
+  --credit: #898989;
 }
 
 [data-theme=green] {
   --important: #809B32;
   --post: #B9CD80;
-  --background: #083003;
+  --background: #132623;
   --button: #5F7909;
   --border: #4F5B2C;
   --header: #A2B46D;
   --text: #072704;
   --theme: #225D12;
-  --credit: #4F5B2C;
+  --credit: #5c6934;
 }
 
 .default-input {

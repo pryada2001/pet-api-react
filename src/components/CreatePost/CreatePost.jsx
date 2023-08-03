@@ -44,7 +44,7 @@ const CreatePost = (props) => {
 							className="create-post-form__textarea"
 							rows="4"
 							placeholder="Описание поста"></textarea>
-
+						<div className="flex-container">
 						<div className="checkbox-important__block">
 							<div
 								className={"checkbox-important__flexbox"  + (post.important ? " checkbox--checked" : "")}
@@ -79,6 +79,7 @@ const CreatePost = (props) => {
 								className="create-post-form__button-cancel">
 								Отмена
 							</button>
+						</div>
 						</div>
 					</div>
 				</form>

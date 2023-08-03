@@ -5,7 +5,7 @@ import AbsenceMessage from "../AbsenceMessage/AbsenceMessage";
 
 const PostList = (props) => {
 
-	const { posts, title, remove } = props;
+	const { posts, title, remove, changeImportant } = props;
 
 	return (
 		<section className="post-list-section">
@@ -24,6 +24,7 @@ const PostList = (props) => {
 										remove={remove}
 										number={index + 1}
 										post={post}
+										changeImportant={changeImportant}
 										key={post.id}
 									/>
 							)

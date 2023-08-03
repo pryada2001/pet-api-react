@@ -3,28 +3,11 @@ import "./PostItem.css";
 
 const PostItem = (props) => {
 
-	const {title, body, important} = props.post;
-	const {number} = props;
-
-	const [favorite, setFavorite] = useState(important);
-
-	/*
-	* TODO: IMPORTANT!
-	* Есть ощущение, что нужно вместо класса "favorite-active" для возможности переключения состояния
-	* нужно использовать [favorite, setFavorite] = useState(false);
-	* пока что используется CSS-класс "favorite active"
-	*
-	* TODO: SECONDARY :-)
-	* Если получится так сделать, то также имеет смысл поменять строки
-	* {"post" + important ? " post-important" : ""}
-	* и
-	* {"post-button button-favorite" + important ? " favorite-active" : ""}
-	* и
-	* fill={important ? "yellow" : "none"}
-	*/
+	const {title, body, important, id} = props.post;
+	const {number, changeImportant} = props;
 
 	return (
-		<div className={"post" + (favorite ? " post-important" : "")}>
+		<div className={"post" + (important ? " post-important" : "")}>
 			<div className="post-text">
 
 				<h2 className="post-header">
@@ -38,11 +21,11 @@ const PostItem = (props) => {
 
 			<div className="post-buttons">
 				<button
-					onClick={() => setFavorite(!favorite)}
-					className={"post-button button-favorite" + (favorite ? " favorite-active" : "")}>
+					onClick={() => changeImportant(id)}
+					className={"post-button button-favorite" + (important ? " favorite-active" : "")}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						fill={favorite ? "yellow" : "none"}
+						fill={important ? "yellow" : "none"}
 						viewBox="0 0 24 24"
 						strokeWidth="1.5"
 						stroke="#403c3c"
