@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./PostItem.css";
 
 const PostItem = (props) => {
@@ -22,7 +22,7 @@ const PostItem = (props) => {
 			<div className="post-buttons">
 				<button
 					onClick={() => changeImportant(id)}
-					className={"post-button button-favorite" + (important ? " favorite-active" : "")}>
+					className={"post-StandardButton StandardButton-favorite" + (important ? " favorite-active" : "")}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill={important ? "yellow" : "none"}

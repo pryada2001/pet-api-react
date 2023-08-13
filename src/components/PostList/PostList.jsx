@@ -1,7 +1,7 @@
 import React from 'react';
 import "./PostList.css";
-import PostItem from "../PostItem/PostItem";
-import AbsenceMessage from "../AbsenceMessage/AbsenceMessage";
+import PostItem from "components/PostItem/PostItem";
+import AbsenceMessage from "components/AbsenceMessage/AbsenceMessage";
 
 const PostList = (props) => {
 

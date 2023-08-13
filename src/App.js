@@ -1,9 +1,9 @@
 import './styles/App.css';
 import React, {useEffect, useState} from "react";
-import PostList from "./components/PostList/PostList";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import CreatePost from "./components/CreatePost/CreatePost";
+import PostList from "components/PostList/PostList";
+import Header from "components/Header/Header";
+import Footer from "components/Footer/Footer";
+import CreatePost from "components/CreatePost/CreatePost";
 
 function App() {
 //------------------------------------------- Блок функций касающихся theme --------------------------------------------

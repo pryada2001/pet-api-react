@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./Header.css";
-import ModalWindow from "../UI/ModalWindow/ModalWindow";
+import StandardModal from "UI/StandardModal/StandardModal";
 
 const Header = ({theme, setTheme, setPosts}) => {
 
@@ -104,7 +104,7 @@ const Header = ({theme, setTheme, setPosts}) => {
 
 
                 </div>
-            <ModalWindow
+            <StandardModal
                 isOpen={isModalOpen}
                 message={modalMessage}
                 consequences={consequencesMessage}

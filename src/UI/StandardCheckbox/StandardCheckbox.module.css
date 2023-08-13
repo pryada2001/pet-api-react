@@ -1,0 +1,38 @@
+.StandardCheckbox {
+  flex: 0 0 fit-content;
+  display: flex;
+}
+.StandardCheckbox .flexbox {
+  display: flex;
+  gap: 0.125rem;
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+}
+.StandardCheckbox .flexbox .checkbox {
+  flex-shrink: 0;
+  box-sizing: content-box;
+  width: 1rem;
+  height: 1rem;
+  border: 0.125rem solid var(--border);
+  border-radius: 0.125rem;
+  background-color: var(--post);
+  color: var(--text);
+  outline: none;
+}
+.StandardCheckbox .flexbox .label {
+  line-height: 1;
+  border: 0.125rem solid transparent;
+  border-radius: 0.125rem;
+}
+.StandardCheckbox .checked .checkbox {
+  background-color: var(--important);
+}
+.StandardCheckbox .visible {
+  opacity: 1;
+}
+.StandardCheckbox .invisible {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=StandardCheckbox.module.css.map */

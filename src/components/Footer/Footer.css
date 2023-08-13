@@ -1,116 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-:root {
-  --dark-gradient-1: #303030;
-  --dark-gradient-2: #ED9284;
-  --dark-gradient-3: #EFD4D4;
-  --light-gradient-1: #000000;
-  --light-gradient-2: #B2ACAC;
-  --light-gradient-3: #FFFFFF;
-  --green-gradient-1: #072704;
-  --green-gradient-2: #809B32;
-  --green-gradient-3: #B9CD80;
-}
-
-[data-theme=dark] {
-  --important: #ED9284;
-  --post: #E6BDB6;
-  --background: #303030;
-  --button: #EFD4D4;
-  --border: #403C3C;
-  --header: #FFB1A5;
-  --text: #403C3C;
-  --theme: #845049;
-  --credit: #7D7876;
-}
-
-[data-theme=light] {
-  --important: #d2d2d2;
-  --post: #FFFFFF;
-  --background: #F4F4F4;
-  --button: #E8E4E4;
-  --border: #403C3C;
-  --header: #000000;
-  --text: #202020;
-  --theme: #4B4B4B;
-  --credit: #898989;
-}
-
-[data-theme=green] {
-  --important: #809B32;
-  --post: #B9CD80;
-  --background: #132623;
-  --button: #5F7909;
-  --border: #4F5B2C;
-  --header: #A2B46D;
-  --text: #072704;
-  --theme: #225D12;
-  --credit: #5c6934;
-}
-
-:root {
-  --dark-gradient-1: #303030;
-  --dark-gradient-2: #ED9284;
-  --dark-gradient-3: #EFD4D4;
-  --light-gradient-1: #000000;
-  --light-gradient-2: #B2ACAC;
-  --light-gradient-3: #FFFFFF;
-  --green-gradient-1: #072704;
-  --green-gradient-2: #809B32;
-  --green-gradient-3: #B9CD80;
-}
-
-[data-theme=dark] {
-  --important: #ED9284;
-  --post: #E6BDB6;
-  --background: #303030;
-  --button: #EFD4D4;
-  --border: #403C3C;
-  --header: #FFB1A5;
-  --text: #403C3C;
-  --theme: #845049;
-  --credit: #7D7876;
-}
-
-[data-theme=light] {
-  --important: #d2d2d2;
-  --post: #FFFFFF;
-  --background: #F4F4F4;
-  --button: #E8E4E4;
-  --border: #403C3C;
-  --header: #000000;
-  --text: #202020;
-  --theme: #4B4B4B;
-  --credit: #898989;
-}
-
-[data-theme=green] {
-  --important: #809B32;
-  --post: #B9CD80;
-  --background: #132623;
-  --button: #5F7909;
-  --border: #4F5B2C;
-  --header: #A2B46D;
-  --text: #072704;
-  --theme: #225D12;
-  --credit: #5c6934;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  color: var(--header);
-}
-
 .Footer {
   margin-top: auto;
   width: 100%;
-  height: 2.5rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
   color: var(--credit);
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */
