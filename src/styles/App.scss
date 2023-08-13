@@ -20,7 +20,7 @@
         .main-section {
             border: 0.25rem solid var(--border);
             border-radius: 0.5rem;
-            padding: 0.5rem 1.25rem;
+            padding: 1rem 1.25rem;
         }
 
         .section-title {
@@ -36,6 +36,39 @@
             padding-left: 0.75rem;
             padding-right: 0.75rem;
             margin: auto;
+        }
+    }
+}
+
+body {
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--credit);
+    border-radius: 9999rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+// Стили для планшетов (и мобилок ?)
+@media (max-width: 768px) {
+    .App {
+        .Main {
+            .main-section {
+                border-left: 0;
+                border-right: 0;
+                border-radius: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }

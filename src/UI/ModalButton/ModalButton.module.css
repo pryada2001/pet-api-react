@@ -1,0 +1,22 @@
+.ModalButton {
+  user-select: none;
+  padding: 0.5rem;
+  border: 0.125rem solid var(--border);
+  border-radius: 0.25rem;
+  color: var(--text);
+  line-height: 1;
+}
+@media (hover: hover) {
+  .ModalButton:hover {
+    opacity: 0.8;
+  }
+}
+.ModalButton[data-type=confirm] {
+  background-color: #f47561;
+}
+.ModalButton[data-type=cancel] {
+  background-color: color-mix(in srgb, var(--credit), var(--background));
+  color: inherit;
+}
+
+/*# sourceMappingURL=ModalButton.module.css.map */

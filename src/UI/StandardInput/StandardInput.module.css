@@ -1,0 +1,23 @@
+.StandardInput {
+  width: 100%;
+  padding: 0.25rem;
+  border: 0.125rem solid var(--border);
+  border-radius: 0.125rem;
+  background-color: var(--post);
+  color: var(--text);
+  outline: none;
+}
+.StandardInput:focus {
+  outline: none;
+  border: 0.125rem solid var(--important);
+  border-radius: 0.125rem;
+}
+.StandardInput[data-type=header] {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.StandardInput[data-type=body] {
+  resize: none;
+}
+
+/*# sourceMappingURL=StandardInput.module.css.map */

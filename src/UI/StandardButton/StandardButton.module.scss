@@ -1,0 +1,25 @@
+.StandardButton {
+    user-select: none;
+    padding: 0.5rem 1rem;
+    border: 0.125rem solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text);
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+
+    @media (hover: hover) {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &[data-type="submit"] {
+        background-color: #73e69d;
+    }
+
+    &[data-type="cancel"] {
+        background-color: #f47561;
+    }
+}

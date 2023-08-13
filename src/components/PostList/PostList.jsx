@@ -1,11 +1,11 @@
 import React from 'react';
 import "./PostList.css";
-import PostItem from "../PostItem/PostItem";
-import AbsenceMessage from "../AbsenceMessage/AbsenceMessage";
+import PostItem from "components/PostItem/PostItem";
+import AbsenceMessage from "components/AbsenceMessage/AbsenceMessage";
 
 const PostList = (props) => {
 
-	const { posts, title, remove } = props;
+	const { posts, title, remove, changeImportant } = props;
 
 	return (
 		<section className="post-list-section">
@@ -24,6 +24,7 @@ const PostList = (props) => {
 										remove={remove}
 										number={index + 1}
 										post={post}
+										changeImportant={changeImportant}
 										key={post.id}
 									/>
 							)
